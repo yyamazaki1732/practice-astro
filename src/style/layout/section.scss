@@ -1,0 +1,48 @@
+.l-section {
+  --num: 20px;
+  --arrow: 10px;
+
+  &:last-of-type {
+    margin-top: 36px;
+  }
+}
+
+.l-section__heading {
+  padding: 8px 4px;
+  margin-top: var(--num);
+  font-weight: 700;
+
+
+  &--primary {
+    font-size: 30px;
+    background-color: var(--c-secondary-100);
+  }
+
+  &--secondary {
+    font-size: 24px;
+    color: var(--c-secondary-500);
+    position: relative;
+    margin-left: 24px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -24px;
+      translate: 0 -50%;
+      width: var(--arrow);
+      height: var(--arrow);
+      border-right: calc(var(--arrow) / 2) solid var(--c-secondary-500);
+      border-bottom: calc(var(--arrow) / 2) solid var(--c-secondary-500);
+      border-top: calc(var(--arrow) / 2) solid transparent;
+      border-left: calc(var(--arrow) / 2) solid transparent;
+      rotate: -45deg;
+    }
+  }
+}
+
+.l-section__text {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 2;
+}

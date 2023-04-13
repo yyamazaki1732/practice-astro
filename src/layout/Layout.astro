@@ -1,0 +1,28 @@
+---
+import Header from "../components/common/Header.astro";
+import Footer from "../components/common/Footer.astro";
+import "../style/foundation/destyle.css";
+import "../style/foundation/base.scss";
+import "../style/layout/header.scss";
+import "../style/layout/footer.scss";
+import "../style/layout/section.scss";
+import "../style/component/stressed.scss";
+import "../style/project/index.scss";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yamazaki Astro</title>
+  </head>
+  <body>
+    <Header />
+    <main class="main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,57 @@
+---
+const headingList = [
+  "❚ ファイル構成",
+  "❚ style.scssにコンパイルする流れ",
+  "❚ 変数やmixinの使用方法",
+];
+---
+
+<section class="l-section">
+  <h1 class="l-section__heading l-section__heading--primary">CSS分割管理</h1>
+  <p class="l-section__text">
+    @useと@forwardを使用し、分割管理しています。 実行環境は <br /><span
+      class="c-stressed">Dart Sass</span
+    >を採用しています。
+  </p>
+  {
+    headingList.map((item) => {
+      return (
+        <>
+          <h2 class="l-section__heading l-section__heading--secondary">
+            {item}
+          </h2>
+          <div class="l-section__panel" />
+        </>
+      );
+    })
+  }
+</section>
+
+<script>
+  const heading = document.getElementsByClassName(
+    "l-section__heading--secondary"
+  );
+  let count = 0;
+
+  for (let i = 0; i < heading.length; i++) {
+    const content = heading[i].nextElementSibling;
+
+    heading[i].addEventListener("click", () => {
+      count++;
+      if (count % 2 == 0) {
+        toggleUp();
+      } else {
+        toggleDown();
+      }
+    });
+
+    function toggleUp() {
+      heading[i].classList.remove("is-active");
+      content.classList.remove("is-active");
+    }
+    function toggleDown() {
+      heading[i].classList.add("is-active");
+      content.classList.add("is-active");
+    }
+  }
+</script>

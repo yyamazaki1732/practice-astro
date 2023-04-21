@@ -38,12 +38,6 @@
       border-left: calc(var(--arrow) / 2) solid transparent;
       rotate: -45deg;
     }
-
-    &.is-active {
-      &::before {
-        rotate: 45deg;
-      }
-    }
   }
 }
 
@@ -55,12 +49,10 @@
 
 .l-section__panel {
   width: 95%;
-  height: 0px;
+  // padding: 140px 0;
+  overflow: hidden;
+  height: 0;
   background-color: skyblue;
   border-radius: 12px;
   margin: 0 auto;
-
-  &.is-active {
-    height: 200px;
-  }
 }

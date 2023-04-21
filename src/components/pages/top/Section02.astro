@@ -1,0 +1,63 @@
+---
+const headingLists = [
+  "❚ PDFLOCSSの前提条件",
+  "❚ foundation",
+  "❚ layout",
+  "❚ component",
+  "❚ project",
+];
+---
+
+<section class="l-section">
+  <h1 class="l-section__heading l-section__heading--primary">
+    命名規則とファイルの種類tests
+  </h1>
+  <p class="l-section__text">
+    命名規則は、<span class="c-stressed">PDFLOCSS（Page Divided FLOCSS）</span
+    >を採用し、自分用に少し変更を加えています。
+    <br />
+    <span class="c-stressed">BEM</span>やF<span class="c-stressed">LOCSS</span
+    >なども使用した経験もあります。
+  </p>
+  {
+    headingLists.map((item) => {
+      return (
+        <>
+          <h2 class="l-section__heading l-section__heading--secondary">
+            {item}
+          </h2>
+          <div class="l-section__panel" />
+        </>
+      );
+    })
+  }
+</section>
+
+<script>
+  const heading = document.getElementsByClassName(
+    "l-section__heading--secondary"
+  );
+  let count = 0;
+
+  for (let i = 0; i < heading.length; i++) {
+    const content = heading[i].nextElementSibling;
+
+    heading[i].addEventListener("click", () => {
+      count++;
+      if (count % 2 == 0) {
+        toggleUp();
+      } else {
+        toggleDown();
+      }
+    });
+
+    function toggleUp() {
+      heading[i].classList.remove("is-active");
+      content.classList.remove("is-active");
+    }
+    function toggleDown() {
+      heading[i].classList.add("is-active");
+      content.classList.add("is-active");
+    }
+  }
+</script>

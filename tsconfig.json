@@ -1,3 +1,16 @@
 {
-  "extends": "astro/tsconfigs/base"
+  "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    // "types": [
+    //   "@astrojs/image/client"
+    // ],
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js"
+  }
 }

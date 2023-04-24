@@ -3,13 +3,22 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@scripts/*": [
+        "src/scripts/*"
+      ],
+      "@layout/*": [
+        "src/layout/*"
+      ],
+      "@public/*": [
+        "public/*"
+      ],
     },
-    // "types": [
-    //   "@astrojs/image/client"
-    // ],
     "jsx": "preserve",
     "jsxImportSource": "solid-js"
   }

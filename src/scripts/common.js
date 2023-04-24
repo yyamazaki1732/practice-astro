@@ -1,3 +1,4 @@
+
 const heading = document.getElementsByClassName(
     "l-section__heading--secondary"
 );

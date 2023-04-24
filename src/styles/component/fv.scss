@@ -1,0 +1,9 @@
+.p-fv__pic {
+  img {
+    height: 300px;
+    width: 100vw;
+    position: relative;
+    object-fit: cover;
+    left: min(calc(-50vw + 40vw), calc(-50vw + 350px));
+  }
+}

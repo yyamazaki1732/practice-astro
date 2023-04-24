@@ -4,6 +4,11 @@ const headingList = [
   "❚ style.scssにコンパイルする流れ",
   "❚ 変数やmixinの使用方法",
 ];
+const contentList = [
+  "エンゼルスの大谷翔平投手は21日（日本時間22日）のロイヤルズ戦に先発し、7回を被安打わずか2本、今季最多の11三振を奪う快投で3勝目を挙げた。エンゼルスの地元放送局「バリースポーツ・ウエスト」で解説を務めるマーク・グビザ氏は「彼はこの世のものではありません」と試合後に最大級の賛辞を贈っている。",
+  "大谷は今季5試合目の登板も好調を続けている。エンゼルスの地元放送局「バリースポーツ・ウエスト」で解説を務めるOBのマーク・グビザ氏と実況のパトニック・オニール氏も大興奮で、7回を投げ終わった際にオニール氏は「6者連続三振。7回無失点、11奪三振。なんてパフォーマンスだ、ショウヘイ・オオタニ」と驚きの言葉を並べている。",
+  "エンゼルスの元投手のグビザ氏も「信じられないほど圧倒的なパフォーマンス。（中3日にも関わらず）とにかく並外れてますね」「改めてですが、ショウヘイ・オオタニ。彼はこの世のものではありません」とコメント。それだけでは足りなかったのか、自身のツイッターでも「ユニコーンは正真正銘アメージング!!　スゴイ。オオタニさんは言葉では表現できない!!」とつづり、興奮冷めやらぬ様子だった。",
+];
 ---
 
 <section class="l-section">
@@ -14,44 +19,15 @@ const headingList = [
     >を採用しています。
   </p>
   {
-    headingList.map((item) => {
+    headingList.map((item, index) => {
       return (
-        <>
           <h2 class="l-section__heading l-section__heading--secondary">
             {item}
           </h2>
-          <div class="l-section__panel" />
-        </>
+          <p class="l-section__panel" >{contentList[index]}</p>
       );
     })
   }
+    {
+    }
 </section>
-
-<script>
-  const heading = document.getElementsByClassName(
-    "l-section__heading--secondary"
-  );
-  let count = 0;
-
-  for (let i = 0; i < heading.length; i++) {
-    const content = heading[i].nextElementSibling;
-
-    heading[i].addEventListener("click", () => {
-      count++;
-      if (count % 2 == 0) {
-        toggleUp();
-      } else {
-        toggleDown();
-      }
-    });
-
-    function toggleUp() {
-      heading[i].classList.remove("is-active");
-      content.classList.remove("is-active");
-    }
-    function toggleDown() {
-      heading[i].classList.add("is-active");
-      content.classList.add("is-active");
-    }
-  }
-</script>

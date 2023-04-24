@@ -1,15 +1,14 @@
 ---
-import Header from "@/components/common/Header.astro";
-import Footer from "@/components/common/Footer.astro";
-import "@/style/foundation/destyle.css";
-import "@/style/foundation/base.scss";
-import "@/style/component/header.scss";
-import "@/style/component/footer.scss";
-import "@/style/component/section.scss";
-import "@/style/component/stressed.scss";
-import "@/style/component/fv.scss";
-import "@/style/component/about.scss";
-import "@/js/common.js";
+import Header from "@components/common/Header.astro";
+import Footer from "@components/common/Footer.astro";
+import "@styles/foundation/destyle.css";
+import "@styles/foundation/base.scss";
+import "@styles/components/header.scss";
+import "@styles/components/footer.scss";
+import "@styles/components/section.scss";
+import "@styles/components/stressed.scss";
+import "@styles/components/fv.scss";
+import "@styles/components/about.scss";
 ---
 
 <!DOCTYPE html>
@@ -26,5 +25,8 @@ import "@/js/common.js";
       <slot />
     </main>
     <Footer />
+    <script>
+      import "@scripts/common.js"
+    </script>
   </body>
 </html>

@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/image": "^0.16.6",
     "astro": "^2.2.2",
+    "astro-relative-links": "^0.3.4",
     "sass": "^1.62.0"
   }
 }

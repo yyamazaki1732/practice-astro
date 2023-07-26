@@ -1,12 +1,18 @@
 ---
-import Layout from "@layout/Layout.astro"
+import Layout from "@layout/Layout.astro";
 import Index from "@components/pages/top/index.astro";
 ---
 
-<Layout>
-	<Index />
+<Layout title={"test"}>
+  <Index />
 </Layout>
 
+<style is:global>
+  body {
+    background-color: #222;
+  }
+</style>
+
 <script>
-	import "@/scripts/common.js";
+  import "@scripts/common.js";
 </script>

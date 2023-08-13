@@ -1,11 +1,31 @@
 ---
-import Fv from "@/components/pages/top/Fv.astro";
-import About from "@/components/pages/top/About.astro";
-import Section01 from "@/components/pages/top/Section01.astro";
-import Section02 from "@/components/pages/top/Section02.astro";
+import Fv from "@components/pages/top/Fv.astro";
+import About from "@components/pages/top/About.astro";
+import Section01 from "@components/pages/top/Section01.astro";
+import Section02 from "@components/pages/top/Section02.astro";
+import Content from "@components/pages/top/Content.astro";
+import { ReactButton } from "@components/common/ReactButtom/Button";
 ---
 
 <Fv />
+<ReactButton />
 <About />
 <Section01 />
-<Section02 />
+<Section02>
+  <Content
+    title="project"
+    content="エンゼルスの大谷翔平投手は21日（日本時間22日）のロイヤルズ戦に先発し、7回を被安打わずか2本、今季最多の11三振を奪う快投で3勝目を挙げた。エンゼルスの地元放送局「バリースポーツ・ウエスト」で解説を務めるマーク・グビザ氏は「彼はこの世のものではありません」と試合後に最大級の賛辞を贈っている。"
+  />
+  <Content
+    title="foundation"
+    content="大谷は今季5試合目の登板も好調を続けている。エンゼルスの地元放送局「バリースポーツ・ウエスト」で解説を務めるOBのマーク・グビザ氏と実況のパトニック・オニール氏も大興奮で、7回を投げ終わった際にオニール氏は「6者連続三振。7回無失点、11奪三振。なんてパフォーマンスだ、ショウヘイ・オオタニ」と驚きの言葉を並べている。"
+  />
+  <Content
+    title="component"
+    content="エンゼルスの元投手のグビザ氏も「信じられないほど圧倒的なパフォーマンス。（中3日にも関わらず）とにかく並外れてますね」「改めてですが、ショウヘイ・オオタニ。彼はこの世のものではありません」とコメント。それだけでは足りなかったのか、自身のツイッターでも「ユニコーンは正真正銘アメージング!!　スゴイ。オオタニさんは言葉では表現できない!!」とつづり、興奮冷めやらぬ様子だった。"
+  />
+  <Content
+    title="project"
+    content="エンゼルスの大谷翔平投手は21日（日本時間22日）のロイヤルズ戦に先発し、7回を被安打わずか2本、今季最多の11三振を奪う快投で3勝目を挙げた。エンゼルスの地元放送局「バリースポーツ・ウエスト」で解説を務めるマーク・グビザ氏は「彼はこの世のものではありません」と試合後に最大級の賛辞を贈っている。"
+  />
+</Section02>@components/common/ReactButtom/Button

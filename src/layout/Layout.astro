@@ -1,14 +1,16 @@
 ---
-import Header from "@/components/common/Header.astro";
-import Footer from "@/components/common/Footer.astro";
-import "@/styles/foundation/destyle.css";
-import "@/styles/foundation/base.scss";
-import "@/styles/component/header.scss";
-import "@/styles/component/footer.scss";
-import "@/styles/component/section.scss";
-import "@/styles/component/stressed.scss";
-import "@/styles/component/fv.scss";
-import "@/styles/component/about.scss";
+import Header from "@components/common/Header.astro";
+import Footer from "@components/common/Footer.astro";
+import "@styles/foundation/destyle.css";
+import "@styles/foundation/base.scss";
+import "@styles/components/header.scss";
+import "@styles/components/footer.scss";
+import "@styles/components/section.scss";
+import "@styles/components/stressed.scss";
+import "@styles/components/fv.scss";
+import "@styles/components/about.scss";
+
+const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -17,7 +19,7 @@ import "@/styles/component/about.scss";
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yamazaki Astro</title>
+    <title>{title}</title>
   </head>
   <body>
     <Header />
@@ -25,5 +27,8 @@ import "@/styles/component/about.scss";
       <slot />
     </main>
     <Footer />
+    <script>
+      import "@scripts/common.js";
+    </script>
   </body>
 </html>

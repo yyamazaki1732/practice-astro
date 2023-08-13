@@ -1,7 +1,17 @@
 ---
-import Picture from "@/images/pic-fv.jpg";
+import { Picture } from "@astrojs/image/components";
+import Path from "@public/pic-fv.jpg";
 ---
 
+<!-- 
 <div class="p-fv__pic">
-  <img src={Picture} alt="" />
+  <Picture 
+  src={Path}
+  alt="image" 
+  widths={[320, 640, 960]} 
+  aspectRatio="1.5:1"
+  />
+</div> -->
+<div class="p-fv__pic">
+  <img src="public/pic-fv.jpg" alt="" />
 </div>

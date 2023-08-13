@@ -1,6 +1,6 @@
 .p-about {
   --num: 24px;
-  margin-top: -100px;
+  // margin-top: -100px;
   position: relative;
   z-index: 1;
 }
@@ -18,12 +18,12 @@
 }
 
 .p-about__setting {
-  margin-top: var(--num);
+  // margin-top: var(--num);
 
   &:last-of-type {
     margin-bottom: var(--num);
     padding-bottom: var(--num);
-    border-bottom: .5px solid var(--c-primary-300);
+    border-bottom: 0.5px solid var(--c-primary-300);
   }
 }
 

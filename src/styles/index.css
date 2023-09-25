@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: Proxima Nova, system-ui, sans-serif;
+  }
+}
+@layer components {
+  @media screen and (min-width:600px) {
+    .c-test {
+      background-color: palegreen;
+      color: olivedrab;
+      width: 10vw;
+    }
+  }
+}
+
+/* ===============================================
+# component
+=============================================== */
+.btn-primary {
+  @apply tw-bg-primary-200;
+}

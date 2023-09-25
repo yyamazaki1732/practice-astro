@@ -1,11 +1,13 @@
 ---
 export interface Props {
-  title : string
-  content : string
+  title: string;
+  content: string;
 }
 
-const { title, content } = Astro.props
+const { title, content } = Astro.props;
 ---
 
-<h2 class="l-section__heading l-section__heading--secondary">{title}</h2>
-<p class="l-section__panel" >{content}</p>
+<h2 class="l-section__heading l-section__heading--secondary tw-bg-primary-600">
+  {title}
+</h2>
+<p class="l-section__panel">{content}</p>

@@ -1,12 +1,13 @@
 import { ButtonText } from "./ButtonText";
-import classes from "./Button.module.scss";
 
-export const ReactButton = () => {
+const Button = () => {
   return (
-    <div className={classes.wrapper}>
+    <div className="tw-grid tw-grid-cols-3 tw-gap-x-2 tw-py-2">
       <ButtonText title={"会社名"} content={"アナイスカンパニー"} />
       <ButtonText title={"最寄り"} content={"表参道"} />
       <ButtonText title={"徒歩"} content={"約10分"} />
     </div>
   );
 };
+
+export default Button

@@ -1,0 +1,22 @@
+.l-footer {
+  height: 300px;
+}
+
+.l-footer__sticky {
+  padding: 8px 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-shadow: 0 0 4px var(--c-primary-100);
+  border-radius: 20px;
+  background-color: var(--c-primary-50);
+  position: fixed;
+  bottom: 24px;
+  left: 36px;
+  font-size: 14px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+}/*# sourceMappingURL=footer.css.map */

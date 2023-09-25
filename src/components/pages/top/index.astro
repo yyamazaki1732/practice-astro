@@ -4,13 +4,12 @@ import About from "@components/pages/top/About.astro";
 import Section01 from "@components/pages/top/Section01.astro";
 import Section02 from "@components/pages/top/Section02.astro";
 import Content from "@components/pages/top/Content.astro";
-import { ReactButton } from "../../common/ReactButtom/Button";
-import Counter from "../../common/ReactCounter/Counter";
+import { Button, Counter, Game } from "@components/common/index";
 ---
 
 <Fv />
-<ReactButton client:load />
-<Counter client:load />
+<Game client:load />
+<Button client:load /><Counter client:load />
 <About />
 <Section01 />
 <Section02>

@@ -1,0 +1,7 @@
+.l-header {
+  padding: 8px 20px;
+  background-color: var(--c-primary-100);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}/*# sourceMappingURL=header.css.map */

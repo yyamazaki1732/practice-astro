@@ -12,10 +12,9 @@
   margin-top: var(--num);
   font-weight: 700;
 
-
   &--primary {
     font-size: 30px;
-    background-color: var(--c-secondary-100);
+    // background-color: var(--c-secondary-100);
   }
 
   &--secondary {
@@ -26,7 +25,7 @@
     cursor: pointer;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 50%;
       left: -24px;
@@ -63,6 +62,6 @@
   display: none;
 
   &.is-active {
-    display: block
+    display: block;
   }
 }
